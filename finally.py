@@ -56,6 +56,9 @@ st.write('Genre with the largest number of creations and dnceularity in recent y
 genre1 = df['topgenre'].value_counts().sort_values(ascending = False).reset_index().head(5)
 genre2 = df.groupby(['topgenre'])['pop'].mean().sort_values(ascending = False).reset_index().head(5)
 genre1 , genre2
+fig, ax9 = plt.subplots(figsize=(15, 15))
+genre2.hist()
+st.pyplot(fig)
 
 fig8, ax = plt.subplots(figsize=(15, 15))
 ax.set_title('Genre percentage chart')
