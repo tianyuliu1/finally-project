@@ -54,7 +54,7 @@ st.write('At the same time, as shown in the figure above, the number of song cre
 st.subheader('Q2:Commemorate popular trends of popular song genre:')
 st.write('Genre with the largest number of creations and dnceularity in recent years :')
 genre1 = df['topgenre'].value_counts().sort_values(ascending = False).reset_index().head(5)
-genre2 = df.groupby(['topgenre'])['dnce'].mean().sort_values(ascending = False).reset_index().head(5)
+genre2 = df.groupby(['topgenre'])['pop'].mean().sort_values(ascending = False).reset_index().head(5)
 genre1 , genre2
 
 fig8, ax = plt.subplots(figsize=(15, 15))
