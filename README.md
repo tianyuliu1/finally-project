@@ -7,3 +7,6 @@ https://tianyuliu1-finally-project-finally-sn42rs.streamlitapp.com/
 Our github url:
 https://github.com/tianyuliu1/finally-project
 
+Our pages url:
+https://tianyuliu1.github.io/finally-project/
+
